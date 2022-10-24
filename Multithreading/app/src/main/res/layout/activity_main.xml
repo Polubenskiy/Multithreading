@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:measureWithLargestChild="false"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewCore"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autoText="false"
+            android:gravity="center_vertical"
+            android:text="@string/textview_core" />
+
+        <SeekBar
+            android:id="@+id/seekBarCore"
+            style="@android:style/Widget.Material.SeekBar"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:pointerIcon="none"
+            android:progressBackgroundTint="@color/orange"
+            android:progressTint="@color/dark_orange"
+            android:scrollbarSize="10dp"
+            android:theme="@style/Theme.Multithreading"
+            android:thumb="@drawable/ic_baseline_adjust_24" />
+
+        <TextView
+            android:id="@+id/textViewValueCore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewThreads"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/textview_thread" />
+
+        <SeekBar
+            android:id="@+id/seekBarThreads"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:progressBackgroundTint="@color/orange"
+            android:progressTint="@color/dark_orange"
+            android:theme="@style/Theme.Multithreading"
+            android:thumb="@drawable/ic_baseline_adjust_24" />
+
+        <TextView
+            android:id="@+id/textViewValueThreads"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="fill_vertical"
+            android:text="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switchBlur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:clickable="true"
+            android:text="@string/switch_blur"
+            android:textColorHighlight="@color/dark_orange"
+            android:textColorLink="#FF9800"
+            android:textCursorDrawable="@color/orange" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switchGaussian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#FF9800"
+            android:checked="false"
+            android:shadowColor="#FF9800"
+            android:text="@string/switch_gaussian"
+            android:textColorHighlight="@color/dark_orange"
+            android:textColorLink="@color/orange" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ProcessImages"
+            android:text="@string/button_calc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/progress_time" />
+    </LinearLayout>
+</LinearLayout>

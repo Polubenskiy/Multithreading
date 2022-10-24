@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Multithreading Polubenskiy 493</string>
+
+    <string name="textview_core">Core:</string>
+    <string name="textview_thread">Threads:</string>
+    <string name="switch_blur">Blur</string>
+    <string name="switch_gaussian">Gaussian</string>
+    <string name="button_calc">Calculate</string>
+    <string name="progress_time">Progressing time:</string>
+</resources>
